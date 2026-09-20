@@ -1,4 +1,5 @@
 # Walk War
+![Uploading WalkWar.png…]()
 
 ## 소개
 **Walk War**는 여행 중의 반복적인 걷기를
