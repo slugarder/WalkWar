@@ -1,6 +1,6 @@
 # Walk War
 ![WalkWar](./WalkWar.png)
-
+[다운로드 링크(안드로이드)](https://github.com/slugarder/WalkWar/raw/refs/heads/main/WalkWar.zip)
 ## 소개
 
 '여행'의 목적은 무엇일까요? 여행을 즐기는 사람들의 이유는 제각각입니다.    
