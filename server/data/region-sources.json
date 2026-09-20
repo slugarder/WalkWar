@@ -1,0 +1,438 @@
+{
+  "snapshotDate": "2026-07-01",
+  "retrievedAt": "2026-09-20",
+  "catalogue": {
+    "provider": "행정안전부",
+    "noticeUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+    "downloadUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+    "file": "jscode20260701.zip",
+    "member": "jscode20260701/KIKcd_H.20260701",
+    "sha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+    "encoding": "CP949",
+    "parser": "MOIS fixed byte columns: code[0:10],sido[11:41],sigungu[42:72],emd[73:103],created[104:112],deleted[113:121]",
+    "activeOfficialRows": 3923,
+    "termsReference": "https://www.mois.go.kr/frt/sub/a08/copyrightPolicy/screen.do",
+    "attribution": "행정안전부, 행정기관(행정동) 및 관할구역(법정동) 변경내역, 2026-07-01"
+  },
+  "boundaries": {
+    "originalProvider": "통계청 통계지리정보서비스 (SGIS)",
+    "originalProviderUrl": "https://sgis.kostat.go.kr",
+    "processor": "vuski/admdongkor",
+    "repository": "https://github.com/vuski/admdongkor",
+    "snapshot": "ver20260701",
+    "commit": "7360288277dfd12d74e54b959c59bdd66f852e3a",
+    "downloadUrl": "https://raw.githubusercontent.com/vuski/admdongkor/7360288277dfd12d74e54b959c59bdd66f852e3a/ver20260701/HangJeongDong_ver20260701.geojson",
+    "sha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+    "sourceFeatureCount": 3558,
+    "crs": "EPSG:4326",
+    "license": "CC-BY-4.0",
+    "upstreamLicense": "KOGL Type 1",
+    "licenseStatement": "https://github.com/vuski/admdongkor/blob/master/LICENSE-DATA",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "upstreamLicenseUrl": "https://www.kogl.or.kr/info/licenseType1.do",
+    "attribution": "본 데이터는 통계청 통계지리정보서비스(SGIS, https://sgis.kostat.go.kr)에서 공공누리 제1유형으로 개방한 행정동 경계를 가공한 것이며(가공: vuski/admdongkor, https://github.com/vuski/admdongkor), CC BY 4.0으로 배포됩니다. WalkWar는 MOIS 코드와 결합하고 상위 경계를 병합·단순화했습니다."
+  },
+  "processing": {
+    "nameAuthority": "MOIS, joined to boundary adm_cd2 by exact 10-digit string",
+    "ids": "mois:<MOIS 10-digit administrative code>",
+    "parents": "emd -> lowest sigungu grouping -> optional enclosing city (also sigungu) -> sido; Sejong grouping 3611000000 retained",
+    "emdGeometry": "Original GeoJSON coordinates, unchanged; JSON serialization and properties normalized",
+    "parentGeometry": "Shapely unary_union of child EMD polygons, then topology-preserving simplification",
+    "simplificationDegrees": {
+      "sido": 0.0002,
+      "sigungu": 5e-05,
+      "emd": 0.0
+    },
+    "centers": "Shapely representative_point inside each supplied polygon; not city hall or GPS observations",
+    "excludedBranchOffices": [
+      {
+        "code": "1213025100",
+        "name": "전남광주통합특별시 여수시 돌산읍우두출장소"
+      },
+      {
+        "code": "1213025200",
+        "name": "전남광주통합특별시 여수시 돌산읍죽포출장소"
+      },
+      {
+        "code": "1213035600",
+        "name": "전남광주통합특별시 여수시 화정면개도출장소"
+      },
+      {
+        "code": "1215031500",
+        "name": "전남광주통합특별시 순천시 해룡면상삼출장소"
+      },
+      {
+        "code": "1215031600",
+        "name": "전남광주통합특별시 순천시 해룡면신대출장소"
+      },
+      {
+        "code": "1274025400",
+        "name": "전남광주통합특별시 고흥군 도양읍소록출장소"
+      },
+      {
+        "code": "1274025500",
+        "name": "전남광주통합특별시 고흥군 도양읍시산출장소"
+      },
+      {
+        "code": "1275038500",
+        "name": "전남광주통합특별시 보성군 득량면예당출장소"
+      },
+      {
+        "code": "1276025100",
+        "name": "전남광주통합특별시 화순군 화순읍민원출장소"
+      },
+      {
+        "code": "1276031500",
+        "name": "전남광주통합특별시 화순군 한천면영외출장소"
+      },
+      {
+        "code": "1280025400",
+        "name": "전남광주통합특별시 영암군 삼호읍서부출장소"
+      },
+      {
+        "code": "1281025800",
+        "name": "전남광주통합특별시 무안군 삼향읍남악출장소"
+      },
+      {
+        "code": "1283038500",
+        "name": "전남광주통합특별시 영광군 낙월면안마출장소"
+      },
+      {
+        "code": "1285029000",
+        "name": "전남광주통합특별시 완도군 노화읍넙도출장소"
+      },
+      {
+        "code": "1285035500",
+        "name": "전남광주통합특별시 완도군 청산면모도출장소"
+      },
+      {
+        "code": "1286036500",
+        "name": "전남광주통합특별시 진도군 조도면가사출장소"
+      },
+      {
+        "code": "1286036600",
+        "name": "전남광주통합특별시 진도군 조도면거차출장소"
+      },
+      {
+        "code": "1287025100",
+        "name": "전남광주통합특별시 신안군 지도읍선도출장소"
+      },
+      {
+        "code": "1287025400",
+        "name": "전남광주통합특별시 신안군 압해읍매화출장소"
+      },
+      {
+        "code": "1287025500",
+        "name": "전남광주통합특별시 신안군 압해읍고이도출장소"
+      },
+      {
+        "code": "1287031500",
+        "name": "전남광주통합특별시 신안군 증도면병풍출장소"
+      },
+      {
+        "code": "1287034500",
+        "name": "전남광주통합특별시 신안군 비금면수치도출장소"
+      },
+      {
+        "code": "1287035500",
+        "name": "전남광주통합특별시 신안군 도초면우이도출장소"
+      },
+      {
+        "code": "1287036500",
+        "name": "전남광주통합특별시 신안군 흑산면가거도출장소"
+      },
+      {
+        "code": "1287036600",
+        "name": "전남광주통합특별시 신안군 흑산면태도출장소"
+      },
+      {
+        "code": "1287036700",
+        "name": "전남광주통합특별시 신안군 흑산면홍도출장소"
+      },
+      {
+        "code": "1287036800",
+        "name": "전남광주통합특별시 신안군 흑산면대둔도출장소"
+      },
+      {
+        "code": "2771025400",
+        "name": "대구광역시 달성군 논공읍공단출장소"
+      },
+      {
+        "code": "2771025700",
+        "name": "대구광역시 달성군 다사읍서재출장소"
+      },
+      {
+        "code": "2811400000",
+        "name": "인천광역시 중구영종출장소"
+      },
+      {
+        "code": "2811800000",
+        "name": "인천광역시 중구용유출장소"
+      },
+      {
+        "code": "2826500000",
+        "name": "인천광역시 서구검단출장소"
+      },
+      {
+        "code": "2871042500",
+        "name": "인천광역시 강화군 서도면볼음출장소"
+      },
+      {
+        "code": "2872031500",
+        "name": "인천광역시 옹진군 북도면장봉출장소"
+      },
+      {
+        "code": "2872034500",
+        "name": "인천광역시 옹진군 대청면소청출장소"
+      },
+      {
+        "code": "2872037500",
+        "name": "인천광역시 옹진군 자월면이작출장소"
+      },
+      {
+        "code": "4110500000",
+        "name": "북부출장소"
+      },
+      {
+        "code": "4122200000",
+        "name": "경기도 송탄출장소"
+      },
+      {
+        "code": "4122400000",
+        "name": "경기도 안중출장소"
+      },
+      {
+        "code": "4136025700",
+        "name": "경기도 남양주시 화도읍동부출장소"
+      },
+      {
+        "code": "4136025800",
+        "name": "경기도 남양주시 화도읍남부출장소"
+      },
+      {
+        "code": "4136200000",
+        "name": "경기도 풍양출장소"
+      },
+      {
+        "code": "4375025400",
+        "name": "충청북도 진천군 덕산읍혁신도시출장소"
+      },
+      {
+        "code": "4377026100",
+        "name": "충청북도 음성군 대소읍성본산업단지출장소"
+      },
+      {
+        "code": "4377033500",
+        "name": "충청북도 음성군 맹동면혁신도시출장소"
+      },
+      {
+        "code": "4418032500",
+        "name": "충청남도 보령시 오천면어항출장소"
+      },
+      {
+        "code": "4418032900",
+        "name": "충청남도 보령시 원산출장소"
+      },
+      {
+        "code": "4711335500",
+        "name": "경상북도 포항시 북구 죽장면상옥출장소"
+      },
+      {
+        "code": "4725033500",
+        "name": "경상북도 상주시 낙동면동부출장소"
+      },
+      {
+        "code": "4725039500",
+        "name": "경상북도 상주시 모서면서부출장소"
+      },
+      {
+        "code": "4725042600",
+        "name": "경상북도 상주시 화북면서부출장소"
+      },
+      {
+        "code": "4725044500",
+        "name": "경상북도 상주시 은척면북부출장소"
+      },
+      {
+        "code": "4728025100",
+        "name": "경상북도 문경시 문경읍갈평출장소"
+      },
+      {
+        "code": "4728025400",
+        "name": "경상북도 문경시 가은읍북부출장소"
+      },
+      {
+        "code": "4777034500",
+        "name": "경상북도 영덕군 지품면원전출장소"
+      },
+      {
+        "code": "4777035500",
+        "name": "경상북도 영덕군 축산면축산출장소"
+      },
+      {
+        "code": "4782025100",
+        "name": "경상북도 청도군 화양읍남성현출장소"
+      },
+      {
+        "code": "4782025400",
+        "name": "경상북도 청도군 청도읍유호출장소"
+      },
+      {
+        "code": "4793031500",
+        "name": "경상북도 울진군 북면하당출장소"
+      },
+      {
+        "code": "4794031500",
+        "name": "경상북도 울릉군 서면태하출장소"
+      },
+      {
+        "code": "4824089000",
+        "name": "경상남도 사천시 신수출장소"
+      },
+      {
+        "code": "4824500000",
+        "name": "경상남도 사천남양출장소"
+      },
+      {
+        "code": "4825200000",
+        "name": "경상남도 장유출장소"
+      },
+      {
+        "code": "4827025100",
+        "name": "경상남도 밀양시 삼랑진임천출장소"
+      },
+      {
+        "code": "4831036600",
+        "name": "경상남도 거제시 사등면가조출장소"
+      },
+      {
+        "code": "4831038500",
+        "name": "경상남도 거제시 하청면칠천출장소"
+      },
+      {
+        "code": "4831039500",
+        "name": "경상남도 거제시 장목면외포출장소"
+      },
+      {
+        "code": "4833200000",
+        "name": "경상남도 양산시웅상출장소"
+      },
+      {
+        "code": "5110500000",
+        "name": "동해출장소"
+      },
+      {
+        "code": "5123025400",
+        "name": "강원특별자치도 삼척시 원덕읍임원출장소"
+      },
+      {
+        "code": "5175035900",
+        "name": "강원특별자치도 영월군 한반도면쌍용출장소"
+      },
+      {
+        "code": "5176032500",
+        "name": "강원특별자치도 평창군 방림면계촌출장소"
+      },
+      {
+        "code": "5177026000",
+        "name": "강원특별자치도 정선군 신동읍함백출장소"
+      },
+      {
+        "code": "5178031500",
+        "name": "강원특별자치도 철원군 서면와수출장소"
+      },
+      {
+        "code": "5181025100",
+        "name": "강원특별자치도 인제군 인제읍귀둔출장소"
+      }
+    ],
+    "supplementalAggregateCities": [
+      {
+        "code": "4111000000",
+        "name": "경기도 수원시"
+      },
+      {
+        "code": "4113000000",
+        "name": "경기도 성남시"
+      },
+      {
+        "code": "4117000000",
+        "name": "경기도 안양시"
+      },
+      {
+        "code": "4119000000",
+        "name": "경기도 부천시"
+      },
+      {
+        "code": "4127000000",
+        "name": "경기도 안산시"
+      },
+      {
+        "code": "4128000000",
+        "name": "경기도 고양시"
+      },
+      {
+        "code": "4146000000",
+        "name": "경기도 용인시"
+      },
+      {
+        "code": "4159000000",
+        "name": "경기도 화성시"
+      },
+      {
+        "code": "4311000000",
+        "name": "충청북도 청주시"
+      },
+      {
+        "code": "4413000000",
+        "name": "충청남도 천안시"
+      },
+      {
+        "code": "4711000000",
+        "name": "경상북도 포항시"
+      },
+      {
+        "code": "4812000000",
+        "name": "경상남도 창원시"
+      },
+      {
+        "code": "5211000000",
+        "name": "전북특별자치도 전주시"
+      }
+    ],
+    "missingBoundaryRegions": [
+      {
+        "code": "5178034000",
+        "name": "강원특별자치도 철원군 근동면"
+      },
+      {
+        "code": "5178035000",
+        "name": "강원특별자치도 철원군 원동면"
+      },
+      {
+        "code": "5178036000",
+        "name": "강원특별자치도 철원군 원남면"
+      },
+      {
+        "code": "5178037000",
+        "name": "강원특별자치도 철원군 임남면"
+      },
+      {
+        "code": "5182034000",
+        "name": "강원특별자치도 고성군 수동면"
+      }
+    ],
+    "administrativeChanges": [
+      "2026-07-01 전라남도와 광주광역시가 전남광주통합특별시(MOIS 시도코드 12)로 통합되어, 이 공식 스냅샷은 세종을 포함한 16개 시도입니다.",
+      "세종특별자치시는 시도 3600000000 및 공식 코드 분류 3611000000으로 광역·중간 지도 단계 모두에 표시됩니다. 3611000000은 별도 자치시가 아닙니다."
+    ],
+    "knownLimitations": [
+      "행정구역·경계 기준일은 2026-07-01이며 현재 시점의 최신 행정구역이라고 주장하지 않습니다.",
+      "2026-07-20 신설된 세종특별자치시 집현동은 이 스냅샷에 반영되지 않았습니다.",
+      "강원특별자치도 철원군 근동면·원동면·원남면·임남면, 고성군 수동면은 공식 코드만 제공되며 경계와 중심점이 없습니다.",
+      "SGIS 원자료를 민간 프로젝트가 보정한 경계입니다. 지적·법률상 경계가 아니며 실제 경계와 차이가 있을 수 있습니다.",
+      "시군구 기본 지도는 수원시 장안구처럼 최하위 시군구를 표시합니다. 일반구가 있는 상위 13개 시는 검색·계층 선택용으로 포함되며 mapSelectable:false로 기본 지도에서 중복 표시하지 않습니다.",
+      "시도·시군구 경계는 수록된 읍면동의 합집합으로 만든 지도 표시용 도형입니다. GPS 판정은 읍면동 경계와 parentId 계층을 사용합니다."
+    ]
+  }
+}

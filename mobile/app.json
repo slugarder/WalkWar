@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "WalkWar",
+    "slug": "walkwar-app",
+    "version": "0.3.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.walkwar.integrated",
+      "versionCode": 10,
+      "permissions": ["android.permission.ACTIVITY_RECOGNITION"],
+      "adaptiveIcon": {
+        "backgroundColor": "#081520",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "predictiveBackGestureEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-font",
+      ["expo-build-properties", {"android":{"usesCleartextTraffic":true,"buildArchs":["arm64-v8a","x86_64"]}}],
+      ["expo-location", {"locationWhenInUsePermission":"주변 지역을 찾고 실제 걸음으로 공략하려면 위치 접근이 필요합니다."}],
+      ["expo-sensors", {"motionPermission":"실제 걸음을 공략 기여도로 반영하려면 활동 접근이 필요합니다."}]
+    ]
+  }
+}

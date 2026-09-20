@@ -1,0 +1,8 @@
+server/node_modules/
+server/dist/
+logs/*.log
+logs/*.pid
+server/data/walkwar.sqlite
+server/data/walkwar.sqlite-*
+.tmp/
+.deployment/
